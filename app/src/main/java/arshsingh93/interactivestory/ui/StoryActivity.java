@@ -7,11 +7,13 @@ import android.util.Log;
 
 import arshsingh93.interactivestory.R;
 import arshsingh93.interactivestory.model.Page;
+import arshsingh93.interactivestory.model.Story;
 
 public class StoryActivity extends AppCompatActivity {
 
     private static final String TAG = StoryActivity.class.getSimpleName();
 
+    private Story myStory = new Story();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,5 +28,26 @@ public class StoryActivity extends AppCompatActivity {
 
 
     }
+
+    private void LoadPage() {
+        Page page = myStory.getPage(0);
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 }
