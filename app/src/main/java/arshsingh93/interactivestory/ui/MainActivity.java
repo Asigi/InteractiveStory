@@ -39,5 +39,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    protected void onResume() {
+        super.onResume();
+       // myNameField.setText(""); If this line is not commented out, then it will reset the name field
+        //every time the user clicks "play again" at the end of a story. However, if this line of code
+        //remains commented out then the user's name will remain in the name field when they restart.
+    }
+
 
 }
